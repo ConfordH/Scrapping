@@ -3,8 +3,8 @@ import re
 
 class MedspiderSpider(scrapy.Spider):
     name = "medspider"
-    allowed_domains = ["www.1mg.com"]
-    start_urls = ["https://www.1mg.com/drugs-all-medicines"]
+    allowed_domains = ["website name"]
+    start_urls = ["website url"]
 
     def parse(self, response):
         meds = response.css('div.style__flex-1___A_qoj'),
